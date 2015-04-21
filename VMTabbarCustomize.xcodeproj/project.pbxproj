@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27DD68EC1AE67F1100322D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD68EB1AE67F1100322D7E /* main.m */; };
+		27DD68EF1AE67F1100322D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD68EE1AE67F1100322D7E /* AppDelegate.m */; };
+		27DD68F21AE67F1100322D7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD68F11AE67F1100322D7E /* ViewController.m */; };
+		27DD68F51AE67F1100322D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD68F31AE67F1100322D7E /* Main.storyboard */; };
+		27DD68F71AE67F1100322D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD68F61AE67F1100322D7E /* Images.xcassets */; };
+		27DD68FA1AE67F1100322D7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DD68F81AE67F1100322D7E /* LaunchScreen.xib */; };
+		27DD69061AE67F1100322D7E /* VMTabbarCustomizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD69051AE67F1100322D7E /* VMTabbarCustomizeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27DD69001AE67F1100322D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DD68DE1AE67F1000322D7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DD68E51AE67F1000322D7E;
+			remoteInfo = VMTabbarCustomize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27DD68E61AE67F1000322D7E /* VMTabbarCustomize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMTabbarCustomize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD68EA1AE67F1100322D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DD68EB1AE67F1100322D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27DD68ED1AE67F1100322D7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27DD68EE1AE67F1100322D7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27DD68F01AE67F1100322D7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27DD68F11AE67F1100322D7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27DD68F41AE67F1100322D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27DD68F61AE67F1100322D7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27DD68F91AE67F1100322D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		27DD68FF1AE67F1100322D7E /* VMTabbarCustomizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMTabbarCustomizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD69041AE67F1100322D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DD69051AE67F1100322D7E /* VMTabbarCustomizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMTabbarCustomizeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27DD68E31AE67F1000322D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD68FC1AE67F1100322D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DD68DD1AE67F1000322D7E = {
+			isa = PBXGroup;
+			children = (
+				27DD68E81AE67F1000322D7E /* VMTabbarCustomize */,
+				27DD69021AE67F1100322D7E /* VMTabbarCustomizeTests */,
+				27DD68E71AE67F1000322D7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27DD68E71AE67F1000322D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DD68E61AE67F1000322D7E /* VMTabbarCustomize.app */,
+				27DD68FF1AE67F1100322D7E /* VMTabbarCustomizeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DD68E81AE67F1000322D7E /* VMTabbarCustomize */ = {
+			isa = PBXGroup;
+			children = (
+				27DD68ED1AE67F1100322D7E /* AppDelegate.h */,
+				27DD68EE1AE67F1100322D7E /* AppDelegate.m */,
+				27DD68F01AE67F1100322D7E /* ViewController.h */,
+				27DD68F11AE67F1100322D7E /* ViewController.m */,
+				27DD68F31AE67F1100322D7E /* Main.storyboard */,
+				27DD68F61AE67F1100322D7E /* Images.xcassets */,
+				27DD68F81AE67F1100322D7E /* LaunchScreen.xib */,
+				27DD68E91AE67F1000322D7E /* Supporting Files */,
+			);
+			path = VMTabbarCustomize;
+			sourceTree = "<group>";
+		};
+		27DD68E91AE67F1000322D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27DD68EA1AE67F1100322D7E /* Info.plist */,
+				27DD68EB1AE67F1100322D7E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27DD69021AE67F1100322D7E /* VMTabbarCustomizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				27DD69051AE67F1100322D7E /* VMTabbarCustomizeTests.m */,
+				27DD69031AE67F1100322D7E /* Supporting Files */,
+			);
+			path = VMTabbarCustomizeTests;
+			sourceTree = "<group>";
+		};
+		27DD69031AE67F1100322D7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27DD69041AE67F1100322D7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27DD68E51AE67F1000322D7E /* VMTabbarCustomize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD69091AE67F1100322D7E /* Build configuration list for PBXNativeTarget "VMTabbarCustomize" */;
+			buildPhases = (
+				27DD68E21AE67F1000322D7E /* Sources */,
+				27DD68E31AE67F1000322D7E /* Frameworks */,
+				27DD68E41AE67F1000322D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMTabbarCustomize;
+			productName = VMTabbarCustomize;
+			productReference = 27DD68E61AE67F1000322D7E /* VMTabbarCustomize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27DD68FE1AE67F1100322D7E /* VMTabbarCustomizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD690C1AE67F1100322D7E /* Build configuration list for PBXNativeTarget "VMTabbarCustomizeTests" */;
+			buildPhases = (
+				27DD68FB1AE67F1100322D7E /* Sources */,
+				27DD68FC1AE67F1100322D7E /* Frameworks */,
+				27DD68FD1AE67F1100322D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DD69011AE67F1100322D7E /* PBXTargetDependency */,
+			);
+			name = VMTabbarCustomizeTests;
+			productName = VMTabbarCustomizeTests;
+			productReference = 27DD68FF1AE67F1100322D7E /* VMTabbarCustomizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27DD68DE1AE67F1000322D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = VuMai;
+				TargetAttributes = {
+					27DD68E51AE67F1000322D7E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					27DD68FE1AE67F1100322D7E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 27DD68E51AE67F1000322D7E;
+					};
+				};
+			};
+			buildConfigurationList = 27DD68E11AE67F1000322D7E /* Build configuration list for PBXProject "VMTabbarCustomize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27DD68DD1AE67F1000322D7E;
+			productRefGroup = 27DD68E71AE67F1000322D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27DD68E51AE67F1000322D7E /* VMTabbarCustomize */,
+				27DD68FE1AE67F1100322D7E /* VMTabbarCustomizeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27DD68E41AE67F1000322D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD68F51AE67F1100322D7E /* Main.storyboard in Resources */,
+				27DD68FA1AE67F1100322D7E /* LaunchScreen.xib in Resources */,
+				27DD68F71AE67F1100322D7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD68FD1AE67F1100322D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DD68E21AE67F1000322D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD68F21AE67F1100322D7E /* ViewController.m in Sources */,
+				27DD68EF1AE67F1100322D7E /* AppDelegate.m in Sources */,
+				27DD68EC1AE67F1100322D7E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD68FB1AE67F1100322D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD69061AE67F1100322D7E /* VMTabbarCustomizeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27DD69011AE67F1100322D7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DD68E51AE67F1000322D7E /* VMTabbarCustomize */;
+			targetProxy = 27DD69001AE67F1100322D7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27DD68F31AE67F1100322D7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD68F41AE67F1100322D7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27DD68F81AE67F1100322D7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD68F91AE67F1100322D7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27DD69071AE67F1100322D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27DD69081AE67F1100322D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27DD690A1AE67F1100322D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VMTabbarCustomize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27DD690B1AE67F1100322D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VMTabbarCustomize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27DD690D1AE67F1100322D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VMTabbarCustomizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMTabbarCustomize.app/VMTabbarCustomize";
+			};
+			name = Debug;
+		};
+		27DD690E1AE67F1100322D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VMTabbarCustomizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMTabbarCustomize.app/VMTabbarCustomize";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27DD68E11AE67F1000322D7E /* Build configuration list for PBXProject "VMTabbarCustomize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD69071AE67F1100322D7E /* Debug */,
+				27DD69081AE67F1100322D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DD69091AE67F1100322D7E /* Build configuration list for PBXNativeTarget "VMTabbarCustomize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD690A1AE67F1100322D7E /* Debug */,
+				27DD690B1AE67F1100322D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27DD690C1AE67F1100322D7E /* Build configuration list for PBXNativeTarget "VMTabbarCustomizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD690D1AE67F1100322D7E /* Debug */,
+				27DD690E1AE67F1100322D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27DD68DE1AE67F1000322D7E /* Project object */;
+}
