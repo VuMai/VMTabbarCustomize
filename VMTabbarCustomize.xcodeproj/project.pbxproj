@@ -13,6 +13,20 @@
 		27DD68F71AE67F1100322D7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD68F61AE67F1100322D7E /* Images.xcassets */; };
 		27DD68FA1AE67F1100322D7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DD68F81AE67F1100322D7E /* LaunchScreen.xib */; };
 		27DD69061AE67F1100322D7E /* VMTabbarCustomizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD69051AE67F1100322D7E /* VMTabbarCustomizeTests.m */; };
+		27DD69111AE684AC00322D7E /* VMMain_ViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD69101AE684AC00322D7E /* VMMain_ViewControler.m */; };
+		27DD69141AE684E900322D7E /* VMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DD69131AE684E900322D7E /* VMTabBar.m */; };
+		27DD69221AE6861500322D7E /* icon_Expences.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69161AE6861500322D7E /* icon_Expences.png */; };
+		27DD69231AE6861500322D7E /* icon_Expences@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69171AE6861500322D7E /* icon_Expences@2x.png */; };
+		27DD69241AE6861500322D7E /* icon_Expences@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69181AE6861500322D7E /* icon_Expences@3x.png */; };
+		27DD69251AE6861500322D7E /* icon_History.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69191AE6861500322D7E /* icon_History.png */; };
+		27DD69261AE6861500322D7E /* icon_History@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691A1AE6861500322D7E /* icon_History@2x.png */; };
+		27DD69271AE6861500322D7E /* icon_History@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691B1AE6861500322D7E /* icon_History@3x.png */; };
+		27DD69281AE6861500322D7E /* icon_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691C1AE6861500322D7E /* icon_setting.png */; };
+		27DD69291AE6861500322D7E /* icon_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691D1AE6861500322D7E /* icon_setting@2x.png */; };
+		27DD692A1AE6861500322D7E /* icon_setting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691E1AE6861500322D7E /* icon_setting@3x.png */; };
+		27DD692B1AE6861500322D7E /* icon_Summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD691F1AE6861500322D7E /* icon_Summary.png */; };
+		27DD692C1AE6861500322D7E /* icon_Summary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69201AE6861500322D7E /* icon_Summary@2x.png */; };
+		27DD692D1AE6861500322D7E /* icon_Summary@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27DD69211AE6861500322D7E /* icon_Summary@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,22 @@
 		27DD68FF1AE67F1100322D7E /* VMTabbarCustomizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMTabbarCustomizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD69041AE67F1100322D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DD69051AE67F1100322D7E /* VMTabbarCustomizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VMTabbarCustomizeTests.m; sourceTree = "<group>"; };
+		27DD690F1AE684AC00322D7E /* VMMain_ViewControler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMMain_ViewControler.h; sourceTree = "<group>"; };
+		27DD69101AE684AC00322D7E /* VMMain_ViewControler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMMain_ViewControler.m; sourceTree = "<group>"; };
+		27DD69121AE684E900322D7E /* VMTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMTabBar.h; sourceTree = "<group>"; };
+		27DD69131AE684E900322D7E /* VMTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMTabBar.m; sourceTree = "<group>"; };
+		27DD69161AE6861500322D7E /* icon_Expences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_Expences.png; sourceTree = "<group>"; };
+		27DD69171AE6861500322D7E /* icon_Expences@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_Expences@2x.png"; sourceTree = "<group>"; };
+		27DD69181AE6861500322D7E /* icon_Expences@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_Expences@3x.png"; sourceTree = "<group>"; };
+		27DD69191AE6861500322D7E /* icon_History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_History.png; sourceTree = "<group>"; };
+		27DD691A1AE6861500322D7E /* icon_History@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_History@2x.png"; sourceTree = "<group>"; };
+		27DD691B1AE6861500322D7E /* icon_History@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_History@3x.png"; sourceTree = "<group>"; };
+		27DD691C1AE6861500322D7E /* icon_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_setting.png; sourceTree = "<group>"; };
+		27DD691D1AE6861500322D7E /* icon_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setting@2x.png"; sourceTree = "<group>"; };
+		27DD691E1AE6861500322D7E /* icon_setting@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setting@3x.png"; sourceTree = "<group>"; };
+		27DD691F1AE6861500322D7E /* icon_Summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_Summary.png; sourceTree = "<group>"; };
+		27DD69201AE6861500322D7E /* icon_Summary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_Summary@2x.png"; sourceTree = "<group>"; };
+		27DD69211AE6861500322D7E /* icon_Summary@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_Summary@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +108,17 @@
 		27DD68E81AE67F1000322D7E /* VMTabbarCustomize */ = {
 			isa = PBXGroup;
 			children = (
+				27DD69151AE6860400322D7E /* Images */,
 				27DD68ED1AE67F1100322D7E /* AppDelegate.h */,
 				27DD68EE1AE67F1100322D7E /* AppDelegate.m */,
 				27DD68F31AE67F1100322D7E /* Main.storyboard */,
 				27DD68F61AE67F1100322D7E /* Images.xcassets */,
 				27DD68F81AE67F1100322D7E /* LaunchScreen.xib */,
 				27DD68E91AE67F1000322D7E /* Supporting Files */,
+				27DD690F1AE684AC00322D7E /* VMMain_ViewControler.h */,
+				27DD69101AE684AC00322D7E /* VMMain_ViewControler.m */,
+				27DD69121AE684E900322D7E /* VMTabBar.h */,
+				27DD69131AE684E900322D7E /* VMTabBar.m */,
 			);
 			path = VMTabbarCustomize;
 			sourceTree = "<group>";
@@ -112,6 +147,25 @@
 				27DD69041AE67F1100322D7E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27DD69151AE6860400322D7E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				27DD69161AE6861500322D7E /* icon_Expences.png */,
+				27DD69171AE6861500322D7E /* icon_Expences@2x.png */,
+				27DD69181AE6861500322D7E /* icon_Expences@3x.png */,
+				27DD69191AE6861500322D7E /* icon_History.png */,
+				27DD691A1AE6861500322D7E /* icon_History@2x.png */,
+				27DD691B1AE6861500322D7E /* icon_History@3x.png */,
+				27DD691C1AE6861500322D7E /* icon_setting.png */,
+				27DD691D1AE6861500322D7E /* icon_setting@2x.png */,
+				27DD691E1AE6861500322D7E /* icon_setting@3x.png */,
+				27DD691F1AE6861500322D7E /* icon_Summary.png */,
+				27DD69201AE6861500322D7E /* icon_Summary@2x.png */,
+				27DD69211AE6861500322D7E /* icon_Summary@3x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +249,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				27DD68F51AE67F1100322D7E /* Main.storyboard in Resources */,
+				27DD69241AE6861500322D7E /* icon_Expences@3x.png in Resources */,
+				27DD69261AE6861500322D7E /* icon_History@2x.png in Resources */,
 				27DD68FA1AE67F1100322D7E /* LaunchScreen.xib in Resources */,
 				27DD68F71AE67F1100322D7E /* Images.xcassets in Resources */,
+				27DD69271AE6861500322D7E /* icon_History@3x.png in Resources */,
+				27DD69231AE6861500322D7E /* icon_Expences@2x.png in Resources */,
+				27DD692A1AE6861500322D7E /* icon_setting@3x.png in Resources */,
+				27DD692B1AE6861500322D7E /* icon_Summary.png in Resources */,
+				27DD692D1AE6861500322D7E /* icon_Summary@3x.png in Resources */,
+				27DD69221AE6861500322D7E /* icon_Expences.png in Resources */,
+				27DD69251AE6861500322D7E /* icon_History.png in Resources */,
+				27DD69281AE6861500322D7E /* icon_setting.png in Resources */,
+				27DD692C1AE6861500322D7E /* icon_Summary@2x.png in Resources */,
+				27DD69291AE6861500322D7E /* icon_setting@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DD69141AE684E900322D7E /* VMTabBar.m in Sources */,
+				27DD69111AE684AC00322D7E /* VMMain_ViewControler.m in Sources */,
 				27DD68EF1AE67F1100322D7E /* AppDelegate.m in Sources */,
 				27DD68EC1AE67F1100322D7E /* main.m in Sources */,
 			);
