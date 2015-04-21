@@ -15,6 +15,7 @@
 -(void)setFontTabBar:(UIFont*)font;
 -(void)addListOfItemText:(NSMutableArray*)arr;
 -(void)addListOfItemImage:(NSMutableArray*)arr;
+-(void)selectTabBarValueWithTag:(NSInteger)tag;
 @end
 
 @protocol VMTabBarDelegate <NSObject>

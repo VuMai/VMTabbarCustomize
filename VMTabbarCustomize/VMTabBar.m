@@ -70,7 +70,7 @@
         [self addSubview:circle];
         [self.listOfItemTabbar addObject:circle];
         [self.listOfCenterOriginIcon addObject:[NSValue valueWithCGPoint:ct]];
-        NSLog(@"%f,%f",circle.frame.size.height,circle.frame.size.width);
+//        NSLog(@"%f,%f",circle.frame.size.height,circle.frame.size.width);
         
         UILabel *lb = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 80, 30)];
         [lb setTextColor:[UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1]];
@@ -87,6 +87,19 @@
 }
 
 #pragma mark - Function progress
+
+-(void)selectTabBarValueWithTag:(NSInteger)tag
+{
+    for (NSInteger i = 0; i<self.listOfItemTabbar.count; i++) {
+        UIImageView *imgTab = (UIImageView*)[self.listOfItemTabbar objectAtIndex:i];
+        
+        if (imgTab.tag == tag) {
+            [self animationTabbarWithTab:imgTab];
+            [self.delegate VMTabBar:self switchTabWithTag:imgTab.tag];
+        }
+    }
+}
+
 -(void)centerReturnWhenClickTabWithTag:(NSInteger)tag
 {
     for (NSInteger i = 0; i < 4; i++) {
@@ -118,6 +131,9 @@
                          }];
         
     }
+    
+    
+    
 }
 
 -(void)animationTabbarWithTab:(UIView *)tabView
@@ -133,7 +149,7 @@
                                     vi.center = CGPointMake(vi.center.x, vi.center.y + 5);
                                     vi.transform = CGAffineTransformMakeScale(1.3, 1.3);
                                 } completion:^(BOOL finished) {
-                                    NSLog(@"%f,%f",vi.frame.size.height,vi.frame.size.width);
+//                                    NSLog(@"%f,%f",vi.frame.size.height,vi.frame.size.width);
                                 }];
             
             
@@ -160,7 +176,10 @@
 {
     UIView *tabView = (UIView*)sender.view;
     [self animationTabbarWithTab:tabView];
+    [self.delegate VMTabBar:self switchTabWithTag:tabView.tag];
+    
 }
+
 
 
 @end
