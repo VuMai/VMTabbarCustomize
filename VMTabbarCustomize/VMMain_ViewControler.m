@@ -9,9 +9,8 @@
 #import "VMMain_ViewControler.h"
 #import "VMTabBar.h"
 
-
-@interface VMMain_ViewControler ()<VMTabBarDelegate>
-
+@interface VMMain_ViewControler ()<VMTabBarDelegate, UIScrollViewDelegate>
+@property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
 @implementation VMMain_ViewControler
@@ -35,11 +34,27 @@
     [tabbar addListOfItemText:[NSMutableArray arrayWithObjects:@"Summary",@"Expences",@"History",@"Setting", nil]];
     //    [tabbar setFontTabBar:[UIFont systemFontOfSize:12]];
     [tabbar setDelegate:self];
-    [tabbar iconTabBarWithNumber:4];
-    [tabbar selectTabBarValueWithTag:3];
-    [self.view addSubview:tabbar];
     
+    // make view when show for click tabbar
+    NSMutableArray *arrColor = [NSMutableArray arrayWithObjects:
+                                rgb(52, 152, 219),
+                                rgb(26, 188, 156),
+                                rgb(231, 76, 60),
+                                rgb(230, 126, 34),nil];
+    NSMutableArray *arrView = [NSMutableArray array];
+    for (NSInteger i = 0; i<4; i++) {
+        UIView *vi = [[UIView alloc] init];
+        [vi setBackgroundColor:(UIColor*)[arrColor objectAtIndex:i]];
+        [arrView addObject:vi];
+    }
+    [tabbar addListOfViewWhenClickTabbar:arrView];
+    [tabbar iconTabBarWithNumber:4];
+    [tabbar selectTabBarValueWithTag:1];
+    [tabbar changeColorTabbarWithColor:[UIColor whiteColor]];
+
 }
+
+
 
 #pragma mark - Tabar delegate
 -(void)VMTabBar:(VMTabBar *)tabbar switchTabWithTag:(NSInteger)tag

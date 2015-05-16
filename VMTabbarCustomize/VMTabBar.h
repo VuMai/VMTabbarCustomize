@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#define rgb(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+
 @protocol VMTabBarDelegate;
 @interface VMTabBar : UIView
 @property (nonatomic) id<VMTabBarDelegate> delegate;
@@ -16,6 +18,8 @@
 -(void)addListOfItemText:(NSMutableArray*)arr;
 -(void)addListOfItemImage:(NSMutableArray*)arr;
 -(void)selectTabBarValueWithTag:(NSInteger)tag;
+-(void)changeColorTabbarWithColor:(UIColor*)color;
+-(void)addListOfViewWhenClickTabbar:(NSMutableArray*)arr;
 @end
 
 @protocol VMTabBarDelegate <NSObject>

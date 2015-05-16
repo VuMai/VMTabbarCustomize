@@ -13,11 +13,11 @@
 @property (nonatomic) NSMutableArray *listOfItemImageTabbar;
 @property (nonatomic) NSMutableArray *listOfTextTabbar;
 @property (nonatomic) NSMutableArray *listOfTextItemTabbar;
-
+@property (nonatomic) NSMutableArray *listOfView;
 @property (nonatomic) NSMutableArray *listOfCenterOriginIcon;
 @property (nonatomic) NSMutableArray *listOfCenterOriginText;
 
-
+@property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic) UIFont *fontTabBar;
 
 @end
@@ -43,13 +43,35 @@
     self.listOfTextTabbar = [NSMutableArray arrayWithArray:arr];
 }
 
+-(void)addListOfViewWhenClickTabbar:(NSMutableArray*)arr
+{
+    self.listOfView = [NSMutableArray arrayWithArray:arr];
+}
+
 -(void)setFontTabBar:(UIFont*)font
 {
     self.fontTabBar = font;
 }
 
+-(void)initScrollViewWithNumOfView:(NSInteger)numOfView
+{
+    self.scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
+    [self.scrollView setPagingEnabled:YES];
+    [self.scrollView setContentSize:CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds)*numOfView)];
+    [self.scrollView setUserInteractionEnabled:NO];
+    [self.scrollView setShowsHorizontalScrollIndicator:NO];
+    
+    for (NSInteger i = 0; i<numOfView; i++) {
+        UIView *vi = (UIView*)[self.listOfView objectAtIndex:i];
+        [vi setFrame:CGRectMake(0, i*CGRectGetHeight(self.bounds), CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds))];
+        [self.scrollView addSubview:vi];
+    }
+    [self addSubview:self.scrollView];
+}
+
 -(void)iconTabBarWithNumber:(NSInteger)num
 {
+    [self initScrollViewWithNumOfView:num];
     self.listOfItemTabbar = [NSMutableArray arrayWithCapacity:num];
     self.listOfTextItemTabbar = [NSMutableArray arrayWithCapacity:num];
     self.listOfCenterOriginIcon = [NSMutableArray arrayWithCapacity:num];
@@ -70,7 +92,6 @@
         [self addSubview:circle];
         [self.listOfItemTabbar addObject:circle];
         [self.listOfCenterOriginIcon addObject:[NSValue valueWithCGPoint:ct]];
-//        NSLog(@"%f,%f",circle.frame.size.height,circle.frame.size.width);
         
         UILabel *lb = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 80, 30)];
         [lb setTextColor:[UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1]];
@@ -129,7 +150,7 @@
                          } completion:^(BOOL finished) {
                              
                          }];
-        
+        [imgTab setUserInteractionEnabled:YES];
     }
     
     
@@ -170,12 +191,26 @@
     }
 }
 
+-(void)changeColorTabbarWithColor:(UIColor*)color
+{
+    for (UIImageView *img in self.listOfItemTabbar) {
+        img.image = [img.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        [img setTintColor:color];
+    }
+    
+    for (UILabel *lb in self.listOfTextItemTabbar) {
+        [lb setTextColor:color];
+    }
+}
+
 
 #pragma mark - Gesture
 -(void)clickTab:(UITapGestureRecognizer*)sender
 {
     UIView *tabView = (UIView*)sender.view;
     [self animationTabbarWithTab:tabView];
+    [self.scrollView setContentOffset:CGPointMake(0, CGRectGetHeight(self.bounds)*(tabView.tag-1)) animated:NO];
+    [tabView setUserInteractionEnabled:NO];
     [self.delegate VMTabBar:self switchTabWithTag:tabView.tag];
     
 }
