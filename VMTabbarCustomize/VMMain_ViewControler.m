@@ -30,11 +30,6 @@
 {
     VMTabBar *tabbar = [[VMTabBar alloc] initWithFrame:self.view.frame];
     
-    [tabbar addListOfItemImage:[NSMutableArray arrayWithObjects:@"icon_Summary.png",@"icon_Expences.png",@"icon_History.png",@"icon_setting.png", nil]];
-    [tabbar addListOfItemText:[NSMutableArray arrayWithObjects:@"Summary",@"Expences",@"History",@"Setting", nil]];
-    //    [tabbar setFontTabBar:[UIFont systemFontOfSize:12]];
-    [tabbar setDelegate:self];
-    
     // make view when show for click tabbar
     NSMutableArray *arrColor = [NSMutableArray arrayWithObjects:
                                 rgb(52, 152, 219),
@@ -48,10 +43,16 @@
         [arrView addObject:vi];
     }
     [tabbar addListOfViewWhenClickTabbar:arrView];
+    
+    [tabbar addListOfItemImage:[NSMutableArray arrayWithObjects:@"icon_Summary.png",@"icon_Expences.png",@"icon_History.png",@"icon_setting.png", nil]];
+    [tabbar addListOfItemText:[NSMutableArray arrayWithObjects:@"Summary",@"Expences",@"History",@"Setting", nil]];
+    [tabbar setDelegate:self];
+    
+    
     [tabbar iconTabBarWithNumber:4];
     [tabbar selectTabBarValueWithTag:1];
     [tabbar changeColorTabbarWithColor:[UIColor whiteColor]];
-
+    [self.view addSubview:tabbar];
 }
 
 
