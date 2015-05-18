@@ -43,11 +43,10 @@
         [arrView addObject:vi];
     }
     [tabbar addListOfViewWhenClickTabbar:arrView];
-    
+    // add icon an for tab
     [tabbar addListOfItemImage:[NSMutableArray arrayWithObjects:@"icon_Summary.png",@"icon_Expences.png",@"icon_History.png",@"icon_setting.png", nil]];
     [tabbar addListOfItemText:[NSMutableArray arrayWithObjects:@"Summary",@"Expences",@"History",@"Setting", nil]];
     [tabbar setDelegate:self];
-    
     
     [tabbar iconTabBarWithNumber:4];
     [tabbar selectTabBarValueWithTag:1];
